@@ -1,0 +1,388 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+/* ! ----- BARRA DE NAVEGACIÓN ----- */
+#contenedor_nav_sec {
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista_nav_sec_inicio {
+    margin-left: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+.lista_nav_sec_final {
+    margin-right: 100px;
+    display: flex;
+    justify-content: end;
+}
+
+.item_nav_sec {
+    padding-top: 15px;
+}
+
+.item_nav_sec a {
+    color: #fff;
+    padding: 20px 20px 13.3px;
+}
+
+.item_nav_sec a:hover {
+    background-color: #0f7;
+    color: #fff;
+}
+
+/* ! ----- HEADER ----- */
+#header {
+    background-image: url("http://cdn2.buenosaires.gob.ar/bsas/establecimientos-educativos/fachada/F_020046900.jpg");
+    background-size: cover;
+}
+
+#header .contenedor_header {
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1% 5%;
+}
+
+#contenedor_nav_pri {
+    margin: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ? ----- BARRA DE NAVEGACIÓN DEL HEADER ----- */
+.lista_nav_pri_inicio {
+    margin: 1%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.lista_nav_pri_final {
+    margin: 1%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.item_nav_pri {
+    color: #fff;
+    font-size: 12px;
+}
+
+.item_nav_pri span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item_nav_pri a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.item_nav_pri a:hover {
+    color: #0f7;
+}
+
+/* ? ----- TÍTULO HEADER ----- */
+#titulo {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20%;
+}
+
+/* ? ----- TARJETAS HEADER ----- */
+#contenedor_tarjetas_header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta_encabezado {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    text-align: center;
+
+    width: 40%;
+    height: 100px;
+    padding: 5% 8% 7%;
+    margin: 5%;
+}
+
+.tarjeta_encabezado a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tarjeta_encabezado a:hover {
+    color: #0f7;
+}
+
+.tarjeta_encabezado i {
+    color: #0f7;
+}
+
+/* ! ----- SECCIÓN NOTICIAS ----- */
+#seccion_noticias .contenedor_noticias {
+    padding: 5% 0;
+}
+
+.titulo_noticias {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* ? ----- TARJETAS NOTICIAS ----- */
+#contenedor_tarjetas_noticias {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta_noticias {
+    width: 100%;
+    margin: 1%;
+}
+
+.tarjeta_noticias img {
+    width: 100%;
+    height: 40%;
+}
+
+.tarjeta_noticias a,
+.tarjeta_noticias a:hover,
+.tarjeta_noticias h3 {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tarjeta_noticia_texto {
+    text-align: justify;
+    padding: 6% 3% 0%;
+}
+
+.tarjeta_noticias .fecha_noticia {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.tarjeta_noticias p {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn_trjt_noticias i {
+    background-color: #000;
+    border-radius: 100px;
+    color: #0f7;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 36px;
+}
+
+.btn_trjt_noticias i:hover {
+    background-color: #0f7;
+    color: #000;
+}
+
+.btn_noticias {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+
+.btn_noticias:hover {
+    background-color: #0f7;
+    color: #333;
+}
+
+.titulo_seccion {
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.subtitulo_seccion {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+
+
+#seccion_ciclo_bas {
+    background-image: url("https://pbs.twimg.com/media/DoHlAJcU8AEiCoC?format=jpg&name=large");
+    background-size: cover;
+    color: #fff;
+}
+
+#seccion_ciclo_bas .contenedor_secciones {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10%;
+}
+
+.contenedor_secciones .container {
+    margin: 10% auto;
+}
+
+.contenedor_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_ciclo_bas_y_sup {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.btn_ciclo_bas_y_sup:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#seccion_ciclo_sup {
+    background-image: url("https://pbs.twimg.com/media/DoHk85XXUAAR902?format=jpg&name=large");
+    background-size: cover;
+}
+
+#seccion_ciclo_sup .contenedor_secciones {
+    background-color: #0f7;
+    background-color: rgba(0, 255, 119, 0.5);
+    padding: 10%;
+}
+
+#seccion_ciclo_sup a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenedor_especialidades {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contenedor_especialidades article {
+    text-align: center;
+}
+
+.trjt_ciclo_bas {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ! ----- FOOTER ----- */
+#contenedor_footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5% 0 10%;
+}
+
+/* ? ----- FOOTER COLUMNA UNO ----- */
+#lista_contacto_footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#lista_contacto_footer .item_nav_footer {
+    color: #fff;
+    font-size: 12px;
+}
+
+#lista_contacto_footer .item_nav_footer span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.columna_uno p {
+    margin-left: 10%;
+}
+
+#lista_redes_footer {
+    background-color: #333;
+    margin: 1%;
+    display: flex;
+    justify-content: start;
+}
+
+#lista_redes_footer .item_nav_footer {
+    padding-top: 15px;
+}
+
+#lista_redes_footer .item_nav_footer a {
+    color: #fff;
+    padding: 20px 22px;
+}
+
+#lista_redes_footer .item_nav_footer a:hover {
+    background-color: #0f7;
+    color: #fff;
+}
+
+/* ? ----- FOOTER COLUMNA DOS ----- */
+.columna_dos li {
+    margin-bottom: 10%;
+}
+
+.columna_dos a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.columna_dos a:hover {
+    color: #0f7;
+}
+
+/* ? ----- FOOTER COLUMNA TRES ----- */
+.columna_tres li {
+    margin-bottom: 10%;
+}
+
+.columna_tres a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.columna_tres a:hover {
+    color: #0f7;
+}
+
+.columna_tres .especialidades li {
+    font-size: 14px;
+    margin-bottom: 5%;
+}

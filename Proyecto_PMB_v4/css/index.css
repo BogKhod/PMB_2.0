@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --colorClaro: #eee;
+    --colorFondo: #222;
+    --colorEnfasis: #7e7;
+    --sombraFondos: #000a;
+    --sombraTarjetas: #000c;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+body a {
+    color: var(--colorClaro);
+    text-decoration: none;
+}
+
+body a:hover {
+    color: var(--colorEnfasis);
+}
+
+/* ! ----- BARRA DE NAVEGACIÓN REDES SOCIALES ----- */
+#navbar_redes {
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: 3rem;
+}
+
+#contenedor_navbar_redes {
+    background-color: var(--colorFondo);
+    width: 90%;
+    height: 3rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.lista_nav_redes_inicio,
+.lista_nav_redes_final,
+.item_nav_redes,
+.item_nav_redes a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item_nav_redes a {
+    color: var(--colorClaro);
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.item_nav_redes a:hover {
+    background-color: var(--colorEnfasis);
+    color: var(--colorClaro);
+}
+
+@media (max-width: 768px) {
+    #contenedor_navbar_redes {
+        display: none;
+    }
+}
+
+/* ! ----- HEADER ----- */
+#header {
+    /* el backgorund-image se llama mediante el DOM y JavaScript */
+    background-size: cover;
+}
+
+#header .contenedor_header {
+    background-color: var(--colorFondo);
+    background-color: var(--sombraFondos);
+    padding: 2rem;
+    height: 93vh;
+}
+
+/* ? ----- BARRA DE NAVEGACIÓN DEL HEADER ----- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-enlace {
+    color: var(--colorClaro);
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 35px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo p {
+    margin: 1rem;
+}
+
+.logo p span {
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu-item {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.nav-menu-enlace {
+    padding: 6px 12px;
+}
+
+.nav-menu-enlace:hover {
+    color: var(--colorEnfasis);
+}
+
+.logo:hover {
+    color: var(--colorClaro);
+}
+
+/* Botón */
+.nav-toggle {
+    color: var(--colorClaro);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* Celulares */
+@media (max-width: 992px) {
+    .logo {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .nav-menu {
+        background-color: var(--colorFondo);
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 180px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .nav-menu-item:hover,
+    .nav-menu-enlace:hover {
+        background-color: var(--colorEnfasis);
+        color: var(--colorClaro);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+}
+
+/* ? ----- TÍTULO HEADER ----- */
+.titulo {
+    color: var(--colorClaro);
+    margin-top: 20%;
+    margin-left: 2rem;
+}
+
+.titulo h1 {
+    font-weight: 600;
+}
+
+/* ! ----- SECCIÓN NOTICIAS ----- */
+#seccion_noticias .contenedor_noticias {
+    padding: 5% 0;
+}
+
+.titulo_noticias {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* ? ----- TARJETAS NOTICIAS ----- */
+#contenedor_tarjetas_noticias {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta_noticias {
+    width: 100%;
+    margin: 1%;
+}
+
+.tarjeta_noticias img {
+    width: 100%;
+    height: 40%;
+}
+
+.tarjeta_noticias a,
+.tarjeta_noticias a:hover,
+.tarjeta_noticias h3 {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tarjeta_noticia_texto {
+    text-align: justify;
+    padding: 6% 3% 0%;
+}
+
+.tarjeta_noticias .fecha_noticia {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.tarjeta_noticias p {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ? ----- BOTÓN NOTICIAS ----- */
+.contenedor_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_noticias {
+    background: none;
+    border: 1px solid var(--colorFondo);
+    color: var(--colorFondo);
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+
+.btn_noticias:hover {
+    background-color: var(--colorEnfasis);
+    color: var(--colorFondo);
+}
+
+/* Celulares */
+@media (max-width: 992px) {
+    #contenedor_tarjetas_noticias {
+        margin: 2% 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta_noticias {
+        width: 70%;
+        margin: 1%;
+        margin-bottom: 8rem;
+    }
+
+    .tarjeta_noticias img {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+/* ! ----- SECCIÓN CICLOS BÁSICO Y SUPERIOR ----- */
+
+/* ? ----- CICLO BÁSICO ----- */
+#seccion_ciclo_bas {
+    background-image: url("https://pbs.twimg.com/media/DoHlAJcU8AEiCoC?format=jpg&name=large");
+    background-size: cover;
+    color: var(--colorClaro);
+}
+
+#seccion_ciclo_bas .contenedor_secciones {
+    background-color: var(--sombraFondos);
+    padding: 10%;
+}
+
+.contenedor_secciones .container {
+    margin: 10% auto;
+}
+
+.trjt_ciclo_bas {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ? ----- CICLO SUPERIOR ----- */
+#seccion_ciclo_sup {
+    background-image: url("https://pbs.twimg.com/media/DoHk85XXUAAR902?format=jpg&name=large");
+    background-size: cover;
+}
+
+#seccion_ciclo_sup .contenedor_secciones {
+    background-color: var(--colorEnfasis);
+    background-color: rgba(119, 238, 119, 0.5);
+    padding: 10%;
+}
+
+#seccion_ciclo_sup a {
+    color: var(--colorClaro);
+    text-decoration: none;
+}
+
+.contenedor_especialidades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_especialidades article {
+    text-align: center;
+}
+
+.titulo_seccion {
+    color: var(--colorClaro);
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.subtitulo_seccion {
+    color: var(--colorClaro);
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.btn_ciclo_bas_y_sup {
+    background: none;
+    border: 1px solid var(--colorClaro);
+    color: var(--colorClaro);
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+.btn_ciclo_bas_y_sup:hover {
+    background-color: var(--colorClaro);
+    color: var(--colorFondo);
+}
+
+/* Celulares */
+@media (max-width: 992px) {
+    .contenedor_tarjetas_ciclo_bas {
+        display: block;
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center; */
+    }
+
+    .trjt_ciclo_bas {
+        width: 100%;
+    }
+
+    .contenedor_especialidades {
+        display: block;
+        /* flex-wrap: wrap;
+        justify-content: center; */
+    }
+
+    .contenedor_especialidades article {
+        margin-bottom: 4rem;
+    }
+
+}
+
+/* ! ----- FOOTER ----- */
+#contenedor_footer {
+    background-color: var(--colorFondo);
+    color: var(--colorClaro);
+    padding: 5% 0 10%;
+}
+
+/* ? ----- FOOTER COLUMNA UNO ----- */
+#lista_contacto_footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.columna_uno p {
+    margin-left: 10%;
+}
+
+.item_nav_footer .logo p {
+    color: var(--colorClaro);
+    margin: 1rem;
+}
+
+.item_nav_footer .logo p span {
+    color: var(--colorClaro);
+}
+
+
+#lista_redes_footer {
+    background-color: var(--colorFondo);
+    margin: 1%;
+    display: flex;
+    justify-content: start;
+}
+
+#lista_redes_footer .item_nav_footer {
+    padding-top: 15px;
+}
+
+#lista_redes_footer .item_nav_footer a {
+    color: var(--colorClaro);
+    padding: 20px 22px;
+}
+
+#lista_redes_footer .item_nav_footer a:hover {
+    background-color: var(--colorEnfasis);
+    color: var(--colorClaro);
+}
+
+/* ? ----- FOOTER COLUMNA DOS ----- */
+.columna_dos li {
+    margin-bottom: 10%;
+}
+
+.columna_dos a {
+    color: var(--colorClaro);
+    text-decoration: none;
+}
+
+.columna_dos a:hover {
+    color: var(--colorEnfasis);
+}
+
+/* ? ----- FOOTER COLUMNA TRES ----- */
+.columna_tres li {
+    margin-bottom: 10%;
+}
+
+.columna_tres a {
+    color: var(--colorClaro);
+    text-decoration: none;
+}
+
+.columna_tres a:hover {
+    color: var(--colorEnfasis);
+}
+
+.columna_tres .especialidades li {
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+/* Celulares */
+@media (max-width: 992px) {
+
+    #contenedor_footer,
+    .contenedor_footer {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 2rem 0;
+    }
+
+    .columna_dos,
+    .columna_tres {
+        display: none;
+    }
+
+}
